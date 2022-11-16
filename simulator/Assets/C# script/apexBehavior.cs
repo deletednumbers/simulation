@@ -68,7 +68,7 @@ public class apexBehavior : MonoBehaviour
 	hungerTime = whatTime + 1.0f;
 	}
 	
-	if (whatTime >= 76f)
+	if (whatTime >= 56f)
 	{
 	hunger -= 1;
 	whatTime = Time.deltaTime;
