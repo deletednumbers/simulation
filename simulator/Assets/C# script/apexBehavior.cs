@@ -21,11 +21,11 @@ public class apexBehavior : MonoBehaviour
     //Fetch the Rigidbody from the GameObject with this script attached
         m_Rigidbody = GetComponent<Rigidbody>();
         whatTime = Time.deltaTime;
-	rightTime = whatTime + 3.0f;
+		rightTime = whatTime + 3.0f;
         forwardTime = whatTime + 4.0f;
         hungerTime = whatTime + 1.0f;
 		twistTime = whatTime + 2.0f;
-        hunger = 100;
+        hunger = 50;
         
     //Apply a force to this Rigidbody in direction of this GameObjects up axis
 
@@ -68,7 +68,7 @@ public class apexBehavior : MonoBehaviour
 	hungerTime = whatTime + 1.0f;
 	}
 	
-	if (whatTime >= 86f)
+	if (whatTime >= 76f)
 	{
 	hunger -= 1;
 	whatTime = Time.deltaTime;
@@ -76,13 +76,14 @@ public class apexBehavior : MonoBehaviour
 	rightTime = whatTime + 12.0f;
 	hungerTime = whatTime + 1.0f;
 	twistTime = whatTime + 2.0f;
-		if(hunger >= 100)
-    		{
-		// Instantiate at position (0, 0, 0) and zero rotation.
-		Vector3 here = gameObject.transform.position;
-		//Instantiate(myPrefab, new Vector3(20, 2, 0), Quaternion.identity);
-		Instantiate(myPrefab, here, Quaternion.identity);
-    		}
+		if(hunger >= 60)
+    	{
+			// Instantiate at position (0, 0, 0) and zero rotation.
+			Vector3 here = gameObject.transform.position;
+			//Instantiate(myPrefab, new Vector3(20, 2, 0), Quaternion.identity);
+			Instantiate(myPrefab, here, Quaternion.identity);
+			myPrefab.name = "apex";
+    	}
 	}
 	
 	//creature starves and is destroyed

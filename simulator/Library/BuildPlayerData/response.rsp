@@ -10,6 +10,7 @@
 -a="/home/nunya/Documents/unity projects/simulator/simulator/Library/PlayerScriptAssemblies/Unity.Services.Core.Configuration.dll"
 -a="/home/nunya/Documents/unity projects/simulator/simulator/Library/PlayerScriptAssemblies/Unity.Services.Core.dll"
 -a="/home/nunya/Documents/unity projects/simulator/simulator/Library/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll"
+-a="/home/nunya/Documents/unity projects/simulator/simulator/Library/PlayerScriptAssemblies/Cinemachine.dll"
 -a="/home/nunya/Documents/unity projects/simulator/simulator/Library/PlayerScriptAssemblies/Unity.Services.Core.Analytics.dll"
 -a="/home/nunya/Documents/unity projects/simulator/simulator/Library/PlayerScriptAssemblies/Unity.Services.Core.Registration.dll"
 -a="/home/nunya/Documents/unity projects/simulator/simulator/Library/PlayerScriptAssemblies/Unity.Services.Core.Environments.dll"

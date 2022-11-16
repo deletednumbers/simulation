@@ -23,15 +23,22 @@ public class creatureCollision : MonoBehaviour
         {
         creatureBehavior creature = gameObject.GetComponent(typeof(creatureBehavior)) as creatureBehavior;
 
-	if(creature.hunger <98)
-		{
-        	creature.hunger += 2;
+	        if(creature.hunger <96)
+		    {
+            	creature.hunger += 4;
         	}
         }
         
         if(other.gameObject.tag == "predator")
         {
-    	Destroy(gameObject);
+            predatorBehavior predator = other.gameObject.GetComponent(typeof(predatorBehavior)) as predatorBehavior;
+    	    Debug.Log(predator.hunger);
+            if (predator.hunger<88)
+            {
+                Destroy(gameObject);
+                Debug.Log("destroyed");
+            }
+            
         }
         //subtract one height from tree
         

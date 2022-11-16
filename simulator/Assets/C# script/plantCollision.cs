@@ -24,10 +24,17 @@ public class plantCollision : MonoBehaviour
         //subtract one height from tree
         if(other.gameObject.tag == "creature")
         {
-        	if(gameObject.transform.localScale.y > new Vector3(0,0,0).y){
-       		combinedScale = gameObject.transform.localScale - plantScale;
-		gameObject.transform.localScale = combinedScale;
-		}
-	}
+            creatureBehavior creature = other.gameObject.GetComponent(typeof(creatureBehavior)) as creatureBehavior;
+    	    Debug.Log(creature.hunger);
+            if (creature.hunger<96)
+            {
+        	    if(gameObject.transform.localScale.y > new Vector3(0,0,0).y)
+                {
+       		        combinedScale = gameObject.transform.localScale - plantScale;
+		            gameObject.transform.localScale = combinedScale;
+                }
+                Debug.Log("munch");
+		    }
+	    }
     }
 }

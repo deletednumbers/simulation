@@ -20,12 +20,12 @@ public class apexCollision : MonoBehaviour
     {  
         if(other.gameObject.tag == "predator")
         {
-        apexBehavior apex = gameObject.GetComponent(typeof(apexBehavior)) as apexBehavior;
+            apexBehavior apex = gameObject.GetComponent(typeof(apexBehavior)) as apexBehavior;
 
-	if(apex.hunger <90)
-		{
-        	apex.hunger += 45;
-        	}
+	        if(apex.hunger <80)
+		        {
+        	        apex.hunger += 20;
+        	    }
         }    
     }
 }

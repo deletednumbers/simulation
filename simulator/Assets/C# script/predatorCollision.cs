@@ -20,17 +20,23 @@ public class predatorCollision : MonoBehaviour
     {  
         if(other.gameObject.tag == "creature")
         {
-        predatorBehavior predator = gameObject.GetComponent(typeof(predatorBehavior)) as predatorBehavior;
+          predatorBehavior predator = gameObject.GetComponent(typeof(predatorBehavior)) as predatorBehavior;
 
-	if(predator.hunger <90)
-		{
-        	predator.hunger += 10;
+	        if(predator.hunger <88)
+		      {
+          	predator.hunger += 12;
         	}
         } 
         
         if(other.gameObject.tag == "apex")
         {
-    		Destroy(gameObject);
+            apexBehavior apex = other.gameObject.GetComponent(typeof(apexBehavior)) as apexBehavior;
+    	    Debug.Log(apex.hunger);
+            if (apex.hunger<80)
+            {
+                Destroy(gameObject);
+                Debug.Log("MAIN COURSE");
+            }
         }   
     }
 }

@@ -18,7 +18,7 @@ public class plantTallBehavior : MonoBehaviour
     void Start()
     {
     whatTime = Time.deltaTime;
-    growTime = whatTime + 40f;
+    growTime = whatTime + 20f;
     seedTime = whatTime + 10f;
     }
 
@@ -29,18 +29,18 @@ public class plantTallBehavior : MonoBehaviour
 	
 	if (growTime <= whatTime)
 	{
-		if(gameObject.transform.localScale.y < new Vector3(0,4,0).y )
+		if(gameObject.transform.localScale.y < new Vector3(0,12,0).y )
 		{
 		combinedScale = gameObject.transform.localScale + plantScale;
 		gameObject.transform.localScale = combinedScale;
-		growTime = whatTime + 40f;
+		growTime = whatTime + 20f;
 		}
 	}
 	
 	if (whatTime >= 60f)
 	{
 		whatTime = Time.deltaTime;
-		growTime = whatTime + 40f;
+		growTime = whatTime + 20f;
 		seedTime = whatTime + 10f;
 	}
 	

@@ -23,12 +23,12 @@ public class predatorBehavior : MonoBehaviour
 	rightTime = whatTime + 3.0f;
         forwardTime = whatTime + 4.0f;
         hungerTime = whatTime + 1.0f;
-        hunger = 100;
+        hunger = 50;
         
     //Apply a force to this Rigidbody in direction of this GameObjects up axis
 
     }
-
+	
     // Update is called once per frame
     void Update()
     {
@@ -65,13 +65,14 @@ public class predatorBehavior : MonoBehaviour
 	forwardTime = whatTime + 8.0f;
 	rightTime = whatTime + 6.0f;
 	hungerTime = whatTime + 1.0f;
-		if(hunger >= 90)
-    		{
-		// Instantiate at position (0, 0, 0) and zero rotation.
-		Vector3 here = gameObject.transform.position;
-		//Instantiate(myPrefab, new Vector3(20, 2, 0), Quaternion.identity);
-		Instantiate(myPrefab, here, Quaternion.identity);
-    		}
+		if(hunger >= 60)
+    	{
+			// Instantiate at position (0, 0, 0) and zero rotation.
+			Vector3 here = gameObject.transform.position;
+			//Instantiate(myPrefab, new Vector3(20, 2, 0), Quaternion.identity);
+			Instantiate(myPrefab, here, Quaternion.identity);
+			myPrefab.name = "predator";
+		}
 	}
 	
 	//creature starves and is destroyed
