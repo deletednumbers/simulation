@@ -358,10 +358,13 @@
 "Assets/C# script/creatureBehavior.cs"
 "Assets/C# script/creatureCollision.cs"
 "Assets/C# script/explosiveJump.cs"
+"Assets/C# script/flyingCreatureBehavior.cs"
+"Assets/C# script/flyingCreatureCollision.cs"
 "Assets/C# script/plantCollision.cs"
 "Assets/C# script/plantTallBehavior.cs"
 "Assets/C# script/predatorBehavior.cs"
 "Assets/C# script/predatorCollision.cs"
+"Assets/C# script/waterCubeCollision.cs"
 -langversion:9.0
 
 /deterministic
