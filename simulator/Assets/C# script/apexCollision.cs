@@ -4,27 +4,33 @@ using UnityEngine;
 
 public class apexCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-	
     private void OnCollisionEnter(Collision other)
     {  
         if(other.gameObject.tag == "predator")
         {
             apexBehavior apex = gameObject.GetComponent(typeof(apexBehavior)) as apexBehavior;
 
-	        if(apex.hunger <80)
+	        if(apex.hunger <97)
 		        {
-        	        apex.hunger += 20;
+        	        apex.hunger += 3;
+        	    }
+        }    
+        if(other.gameObject.tag == "predator2")
+        {
+            apexBehavior apex = gameObject.GetComponent(typeof(apexBehavior)) as apexBehavior;
+
+	        if(apex.hunger <97)
+		        {
+        	        apex.hunger += 3;
+        	    }
+        }    
+        if(other.gameObject.tag == "predator3")
+        {
+            apexBehavior apex = gameObject.GetComponent(typeof(apexBehavior)) as apexBehavior;
+
+	        if(apex.hunger <97)
+		        {
+        	        apex.hunger += 3;
         	    }
         }    
     }

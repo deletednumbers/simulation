@@ -8,6 +8,12 @@ TagManager:
   - creature
   - predator
   - apex
+  - creature2
+  - creature3
+  - predator2
+  - predator3
+  - Tree2
+  - Tree3
   layers:
   - Default
   - TransparentFX

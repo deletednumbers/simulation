@@ -45,7 +45,7 @@ public class flyingCreatureBehavior : MonoBehaviour
         	Vector3 explosionPos = m_Rigidbody.transform.position - new Vector3(0,-1,0);
         	float radius = 5.0F;
         	float power = 400.0F;
-			if (m_Rigidbody.transform.position.y < 12.0f)
+			if (m_Rigidbody.transform.position.y < 5.0f)
     		{
 			m_Rigidbody.AddExplosionForce(power, explosionPos, radius, 3.0F);
 			}
@@ -71,7 +71,7 @@ public class flyingCreatureBehavior : MonoBehaviour
         	Vector3 explosionPos = m_Rigidbody.transform.position - new Vector3(0,-1,0);
         	float radius = 5.0F;
         	float power = 400.0F;
-			if (m_Rigidbody.transform.position.y < 12.0f)
+			if (m_Rigidbody.transform.position.y < 5.0f)
     		{
 				m_Rigidbody.AddExplosionForce(power, explosionPos, radius, 3.0F);
 			}
@@ -95,7 +95,7 @@ public class flyingCreatureBehavior : MonoBehaviour
         	Vector3 explosionPos = m_Rigidbody.transform.position - new Vector3(0,-1,0);
         	float radius = 5.0F;
         	float power = 400.0F;
-			if (m_Rigidbody.transform.position.y < 12.0f)
+			if (m_Rigidbody.transform.position.y < 5.0f)
     		{
 				m_Rigidbody.AddExplosionForce(power, explosionPos, radius, 3.0F);
 			}

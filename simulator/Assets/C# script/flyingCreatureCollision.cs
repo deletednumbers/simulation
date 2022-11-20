@@ -12,7 +12,23 @@ public class flyingCreatureCollision : MonoBehaviour
         flyingCreatureBehavior creature = gameObject.GetComponent(typeof(flyingCreatureBehavior)) as flyingCreatureBehavior;
 
 		    {
-            	creature.hunger += 4;
+            	creature.hunger += 25;
+        	}
+        }
+        if(other.gameObject.tag == "Tree2")
+        {
+        flyingCreatureBehavior creature = gameObject.GetComponent(typeof(flyingCreatureBehavior)) as flyingCreatureBehavior;
+
+		    {
+            	creature.hunger += 25;
+        	}
+        }
+        if(other.gameObject.tag == "Tree3")
+        {
+        flyingCreatureBehavior creature = gameObject.GetComponent(typeof(flyingCreatureBehavior)) as flyingCreatureBehavior;
+
+		    {
+            	creature.hunger += 25;
         	}
         }
         
